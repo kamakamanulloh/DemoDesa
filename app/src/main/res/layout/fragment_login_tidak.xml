@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desa Pintar"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/title"
+        android:id="@+id/subtitle"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="Silahkan Masukkan Email dan Password"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_undraw_mobile_testing_reah"
+        android:layout_below="@id/subtitle"
+        android:id="@+id/img"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="40dp"
+        android:hint="Masukkan NIK"
+        android:id="@+id/et_email"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/img"
+        android:inputType="textEmailAddress"
+
+        android:drawableLeft="@drawable/ic_round_person_24"
+        />
+
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="40dp"
+        android:hint="Masukkan PIN"
+        android:id="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/et_email"
+        android:inputType="textEmailAddress"
+
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/round_button"
+        android:text="Login"
+        android:id="@+id/btnlogin"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+       android:gravity="center"
+        android:id="@+id/text"
+      android:layout_centerHorizontal="true"
+        android:text="Belum Punya Akun ? Harap Datang ke Kantor Desa Terdekat"/>
+
+</RelativeLayout>

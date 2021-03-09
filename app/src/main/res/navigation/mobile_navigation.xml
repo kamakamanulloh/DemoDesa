@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.jproject.demodesa.ui.home2.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home2" />
+
+    <fragment
+        android:id="@+id/navigation_pasar"
+        android:name="com.jproject.demodesa.epasar.EPasarFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_e_pasar" />
+
+    <fragment
+        android:id="@+id/navigation_layanan"
+        android:name="com.jproject.demodesa.surat.AwalSuratFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_awal_surat" />
+
+
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.jproject.demodesa.ui.akun.AkunFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_akun" />
+</navigation>

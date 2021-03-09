@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".epasar.ProdukDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="fitXY"
+                android:id="@+id/img"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card1"
+                app:layout_constraintTop_toBottomOf="@id/img"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/default_indicator_margin_horizontal"
+                        android:paddingBottom="@dimen/default_indicator_margin_horizontal"
+                        android:paddingTop="@dimen/default_indicator_margin_horizontal"
+                        android:id="@+id/tv_produk"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/archivo_black"
+                        android:text="@string/produk"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_marginEnd="@dimen/default_indicator_margin_horizontal"
+                        android:paddingBottom="@dimen/default_indicator_margin_horizontal"
+                        android:paddingTop="@dimen/default_indicator_margin_horizontal"
+                        android:id="@+id/tv_harga"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/archivo_black"
+                        android:text="@string/harga"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlue" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/card1"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deskripsi_produk"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deskripsi_produk"
+                        android:id="@+id/tv_detail"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/card2"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/penjual"
+                        android:text="@string/profil_penjual"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+                        android:src="@drawable/ic_account"
+                        app:civ_border_color="#FF000000"
+                        android:layout_below="@id/penjual"
+
+                        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
+
+
+
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_nmpenjual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/penjual"
+                        android:layout_toEndOf="@id/profile_image"
+                        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/penjual"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:id="@+id/tv_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nmpenjual"
+                        android:layout_toEndOf="@id/profile_image"
+                        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/penjual"
+                        android:textSize="12sp"
+                        />
+
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_indicator_margin_horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:padding="5dp"
+            android:id="@+id/btn_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_blue"
+            android:text="@string/chat_penjual"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_outline_chat_24"/>
+
+        <Button
+            android:layout_marginStart="@dimen/default_indicator_margin_horizontal"
+            android:padding="5dp"
+            android:id="@+id/btn_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_transparant"
+            android:text="@string/hubung_penjual"
+            android:textColor="@color/colorBlue"
+            android:drawableStart="@drawable/ic_outline_phone_in_talk_24"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

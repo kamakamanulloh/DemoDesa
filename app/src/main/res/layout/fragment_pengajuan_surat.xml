@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".surat.PengajuanSuratFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Pengajuan Surat"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:id="@+id/txt"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Pilih Jenis Surat"
+        android:id="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/et_email"
+
+        android:layout_marginBottom="30dp"
+
+
+        />
+
+
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan NIK"
+        android:id="@+id/et_nik"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/et_email"
+        android:inputType="number"
+
+
+        />
+
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan Nama"
+        android:id="@+id/et_nama"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:inputType="textPersonName"
+
+
+        />
+
+
+    <EditText
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan Nomor Hp"
+        android:id="@+id/et_nohp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:inputType="text"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/round_button"
+        android:text="Kirim"
+        android:id="@+id/btnkirim"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

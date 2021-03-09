@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".surat.AwalSuratFragment">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Layanan Surat"
+       android:layout_marginTop="@dimen/activity_vertical_margin"
+       android:textSize="26sp"
+       android:textStyle="bold"
+       android:id="@+id/txt"
+       android:layout_marginBottom="@dimen/activity_vertical_margin"
+       android:textColor="@color/black"
+       android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:text="Daftar Pengajuan Surat"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/daftar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@id/txt"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:text="Surat Baru"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:id="@+id/et_addsurat"
+        android:background="@drawable/et_style_blue"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/daftar"
+        tools:listitem="@layout/list_status_surat"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/rv_history"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+</RelativeLayout>

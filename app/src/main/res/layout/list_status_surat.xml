@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/linear"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+
+            android:background="@color/colorBlue"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tanggal"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/log_surat_add"
+
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tbl"
+            android:layout_below="@id/linear"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/TextSpec.Field"
+
+                    android:text="@string/kode_surat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvkdsurat"
+                    style="@style/TextSpec.Value"
+
+                   />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/TextSpec.Field"
+
+                    android:text="@string/nama_pemohon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextSpec.Value"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/nama"
+                    />
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nm_klinik"
+                    style="@style/TextSpec.Field"
+
+                    android:text="@string/jenis_surat"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextSpec.Value"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/tv_jenis_surat"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/TextSpec.Field"
+
+                    android:text="@string/status_surat"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextSpec.Value"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/tv_status"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbl"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:id="@+id/tvAlasan"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/archivo_black"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

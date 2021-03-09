@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Demo Desa</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="slide_1_title">PELAYANAN ADMINISTRASI</string>
+    <string name="slide_1_desc">Pelayanan Pengajuan Surat Administrasi Lebih Mudah</string>
+
+    <string name="slide_2_title">INFORMASI TERUPDATE</string>
+    <string name="slide_2_desc">Dapatkan Informasi Desa Terupdate</string>
+
+    <string name="slide_3_title">E-PASAR</string>
+    <string name="slide_3_desc">Pasar Digital Untuk UMKM Warga Desa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tanggal">tanggal</string>
+    <string name="kode_surat">Kode Surat</string>
+    <string name="nama_pemohon">Nama Pemohon</string>
+    <string name="jenis_surat">Jenis Surat</string>
+    <string name="status_surat">Status Surat</string>
+    <string name="laiinya">Laiinya</string>
+    <string name="hai_user">Hai User</string>
+    <string name="lihat_profil">Lihat Profil</string>
+    <string name="pelayanan_surat">Pelayanan Surat</string>
+    <string name="e_pasar">E-Pasar</string>
+    <string name="no_telp_penting">No Telp Penting</string>
+    <string name="berita_terbaru">Berita Terbaru</string>
+    <string name="darurat">Darurat</string>
+    <string name="kategori">Kategori</string>
+    <string name="cari_di_sini">Cari di sini....</string>
+    <string name="list_produk">List Produk</string>
+    <string name="penjual">Penjual</string>
+    <string name="notification">Notification</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="layanan_terintegrasi">Layanan Terintegrasi</string>
+    <string name="bpjs_kesehatan">BPJS Kesehatan</string>
+    <string name="alamat_rumah_sakit">Alamat Rumah Sakit</string>
+    <string name="puskesmas">Puskesmas</string>
+    <string name="bansos">Cek Bansos</string>
+    <string name="cek_umkm">Cek Bantuan UMKM</string>
+    <string name="potensi_desa">Potensi Desa</string>
+
+    <string name="sarana_hiburan">Sarana Hiburan</string>
+    <string name="jasa_lokal">Jasa Lokal</string>
+    <string name="tentang_desa">Tentang Desa</string>
+    <string name="anggaran_desa">Anggaran Desa</string>
+    <string name="profil_desa">Profil Desa</string>
+    <string name="pelayanan_masyarakat_desa">Pelayanan Masyarakat Desa</string>
+
+    <string name="peta_desa">Peta Desa</string>
+    <string name="kelembagaan">Kelembagaan</string>
+    <string name="berita">Berita</string>
+    <string name="info">Pengumuman Desa</string>
+    <string name="harga">Harga</string>
+    <string name="produk">Produk</string>
+    <string name="deskripsi_produk">Deskripsi Produk</string>
+    <string name="profil_penjual">Profil Penjual</string>
+    <string name="chat_penjual">Chat Penjual</string>
+    <string name="hubung_penjual">Hubungi Penjual</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="alamat">Alamat</string>
+    <string name="buka_usaha_tanpa_biaya_dan_dapatkan_pengalaman_mengelola_usaha_semudah_update_status">Buka usaha tanpa biaya dan dapatkan pengalaman mengelola usaha semudah update status</string>
+
+    <string name="masukkan_info_toko">Masukkan Info Toko</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2FtYWsxMjMiLCJhIjoiY2trM2Fqd2h1MTh1MTJzbWZjY2tpMzl5ZiJ9.3RlFkhrfOztw0hMfG_M8_g</string>
+
+</resources>

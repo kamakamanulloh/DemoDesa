@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.fragment.LoginSudahFragment"
+    android:orientation="vertical">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:src="@drawable/logojproject2"
+      android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Pilih Provinsi"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Pilih Kabupaten/Kota"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Pilih Kecamatan"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Pilih Desa/Kelurahan"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan NIK"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan Tanggal Lahir"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/et_style"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Masukkan Nomor Telepon"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/round_button"
+        android:text="Login"
+        android:id="@+id/btnlogin"
+        android:textColor="@color/white"/>
+</LinearLayout>

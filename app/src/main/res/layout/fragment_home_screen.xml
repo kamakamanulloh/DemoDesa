@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.fragment.HomeScreenFragment">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_question_1_"
+        android:id="@+id/img"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginTop="40dp"
+        android:text="Desa Pintar"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:id="@+id/tittle"/>
+
+    <ImageView
+        android:id="@+id/imagee"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_undraw_android_jr64"
+        android:layout_below="@id/tittle"
+        android:layout_marginTop="20dp"
+      />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagee"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Apakah desa anda sudah menjadi bekerja sama dengan kami ?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/ask"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ask"
+        android:weightSum="2"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:layout_weight="1"
+            android:text="Sudah"
+            android:id="@+id/btnsudah"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_transparant"
+            android:layout_weight="1"
+            android:text="Belum"
+            android:id="@+id/btnbelum"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

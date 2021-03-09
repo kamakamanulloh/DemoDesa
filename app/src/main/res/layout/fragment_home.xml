@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="1dp"
+        />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/cardview"-->
+<!--        android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:src="@drawable/ic_launcher_background"-->
+<!--            android:scaleType="fitXY"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layanan Untuk Anda"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/carouselView"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:id="@+id/line1"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/profil"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_user_1_"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Profil"
+                    android:textColor="@color/text_color_menu"
+                    android:textSize="12sp"
+                    android:layout_below="@id/profil"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/pelayanan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_documents"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pelayanan Surat"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_menu"
+                    android:layout_below="@id/pelayanan"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/desa"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_village_2_"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tentang Desa"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_menu"
+                    android:layout_below="@id/desa"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:padding="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+               
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/telp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_emergency_call"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="No Telp Penting"
+                    android:textColor="@color/text_color_menu"
+                    android:textSize="12sp"
+                    android:layout_below="@id/telp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/white"
+        android:id="@+id/line2"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/keuangan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_report_2_"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Keuangan Desa"
+                    android:textColor="@color/text_color_menu"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_below="@id/keuangan"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/statistik"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_analytics"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Statistik Desa"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_menu"
+                    android:layout_below="@id/statistik"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/bansos"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_give_money_4_"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Cek Bansos"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_menu"
+                    android:layout_below="@id/bansos"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:padding="5dp">
+            <RelativeLayout
+                android:background="@color/bg_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/lainnya"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_menu"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Menu Lainya"
+                    android:textColor="@color/text_color_menu"
+                    android:textSize="12sp"
+                    android:layout_below="@id/lainnya"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berita Terbaru"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textlain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/laiinya"
+        android:textAlignment="textEnd"
+        app:layout_constraintRight_toRightOf="@id/text2"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+       android:textColor="@color/green"
+        android:textAllCaps="true"
+        android:textSize="12sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rv_berita"
+        tools:listitem="@layout/item_berita"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

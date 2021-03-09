@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".epasar.EPasarFragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/et_search"
+        android:hint="@string/cari_di_sini"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        tools:ignore="RtlHardcoded"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/kategori"
+        app:layout_constraintTop_toBottomOf="@id/et_search"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:textSize="26sp"
+        android:id="@+id/tv_kat"/>
+    <ProgressBar
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textlain"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/laiinya"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        app:layout_constraintRight_toRightOf="@id/tv_kat"-->
+<!--        android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_search"-->
+<!--        android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+<!--        android:textColor="@color/colorBlue"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textSize="12sp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/rv_kat"
+        android:layout_marginStart="@dimen/default_indicator_margin_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_kat"
+        tools:listitem="@layout/item_kategori"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rv_kat"
+        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+        android:text="@string/list_produk"
+        android:layout_marginStart="@dimen/default_indicator_margin_horizontal"
+        android:id="@+id/tvlist"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_indicator_margin_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvlist"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        android:orientation="vertical"
+        android:id="@+id/rv_produk"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        tools:listitem="@layout/item_produk"
+        app:spanCount="2"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="ContentDescription,MissingConstraints,UnusedAttribute,VectorDrawableCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foregroundGravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorBlue"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="visible"
+        android:layout_marginBottom="40dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorBlue"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_baseline_cloud_upload_24"
+        app:layout_constraintBottom_toTopOf="@id/fab_main"
+        android:foregroundGravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorBlue"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_baseline_library_books_24"
+        app:layout_constraintBottom_toTopOf="@id/btnupload"
+        android:foregroundGravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

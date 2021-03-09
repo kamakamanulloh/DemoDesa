@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_pasar"
+        android:icon="@drawable/ic_outline_storefront_24"
+        android:title="e-Pasar" />
+
+    <item
+        android:id="@+id/navigation_layanan"
+        android:icon="@drawable/ic_outline_assignment_24"
+        android:title="Layanan" />
+
+    <item
+        android:id="@+id/navigation_artikel"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Artikel" />
+
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Akun" />
+
+</menu>

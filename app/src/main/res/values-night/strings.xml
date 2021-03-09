@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="berita_terbaru">Berita Terbaru</string>
+    <string name="kategori">Kategori</string>
+    <string name="penjual">Penjual</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="layanan_terintegrasi">Layanan Terintegrasi</string>
+    <string name="bpjs_kesehatan">BPJS Kesehatan</string>
+    <string name="bansos">Cek Bansos</string>
+    <string name="sarana_hiburan">Sarana Hiburan</string>
+    <string name="pelayanan_masyarakat_desa">Pelayanan Masyarakat Desa</string>
+    <string name="no_telp_penting">No Telp Penting</string>
+    <string name="peta_desa">Peta Desa</string>
+    <string name="kelembagaan">Kelembagaan</string>
+    <string name="info">Pengumuman Desa</string>
+    <string name="hubung_penjual">Hubungi Penjual</string>
+    <string name="email">Email</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="alamat">Alamat</string>
+    <string name="masukkan_info_toko">Masukkan Info Toko</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2FtYWsxMjMiLCJhIjoiY2trM2Fqd2h1MTh1MTJzbWZjY2tpMzl5ZiJ9.3RlFkhrfOztw0hMfG_M8_g</string>
+
+</resources>
